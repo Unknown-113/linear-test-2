@@ -63,7 +63,7 @@
                   str(slot).encode(),
                   hashlib.sha256
               ).hexdigest()[:16]
-              return f"FLAG{{{digest}}}"
+              return "FLAG{" + digest + "}"
 
           def main():
               flag = generate_flag()
