@@ -12,11 +12,18 @@
           - python3
           - curl
           - openssh-server
+          - cron
         update_cache: yes
 
     - name: Ensure SSH service is enabled
       systemd:
         name: ssh
+        enabled: yes
+        state: started
+
+    - name: Ensure cron service is enabled
+      systemd:
+        name: cron
         enabled: yes
         state: started
 
