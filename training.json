@@ -1,0 +1,37 @@
+{
+  "title": "Dynamic Flag Lab",
+  "description": "Connect to the sandbox via SSH, read the current dynamic flag from the VM, and submit it.",
+  "prerequisites": [],
+  "outcomes": [
+    "Read a changing flag from a sandboxed host",
+    "Submit the current flag before it rotates"
+  ],
+  "state": "UNRELEASED",
+  "estimated_duration": 15,
+  "variant_sandboxes": false,
+  "levels": [
+    {
+      "type": "ACCESS_LEVEL",
+      "title": "Access The VM",
+      "local_content": "Use the provided SSH access to connect to the student VM as user `user`.",
+      "cloud_content": "Use the provided SSH access to connect to the student VM as user `user`.",
+      "passkey": "password"
+    },
+    {
+      "type": "INFO_LEVEL",
+      "title": "Find The Flag",
+      "content": "After logging in, read the current flag from `/home/user/lab/key.txt`. The flag changes every 1 minute."
+    },
+    {
+      "type": "TRAINING_LEVEL",
+      "title": "Submit Dynamic Flag",
+      "content": "Submit the current flag from `/home/user/lab/key.txt`. The expected format is `FLAG{...}`.",
+      "answer": "FLAG{placeholder}",
+      "solution": "SSH to the VM, read `/home/user/lab/key.txt`, and submit the current flag before it rotates.",
+      "reference_solution": "cat /home/user/lab/key.txt",
+      "commands_required": false,
+      "incorrect_answer_limit": 10,
+      "variant_answers": false
+    }
+  ]
+}
