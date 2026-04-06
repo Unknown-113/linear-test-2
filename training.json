@@ -15,8 +15,8 @@
       "title": "Access The VM",
       "order": 0,
       "estimated_duration": 2,
-      "local_content": "Use the provided SSH access to connect to the student VM as user `user`.",
-      "cloud_content": "Use the provided SSH access to connect to the student VM as user `user`.",
+      "local_content": "Use the provided SSH access to connect to the student VM as user `user`.\nPasskey:password",
+      "cloud_content": "Use the provided SSH access to connect to the student VM as user `user`.\nPasskwy:password",
       "passkey": "password"
     },
     {
