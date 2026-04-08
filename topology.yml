@@ -1,4 +1,4 @@
-name: dynamic-flag-lab
+name: linear-test
 
 hosts:
   - name: student-vm
